@@ -2,12 +2,20 @@
 title: "About"
 image: profile.jpg
 about:
-  template: jolla
+  template: solana
   links:
-    - icon: github
-      text: Github
-      href: https://github.com/etc5523-2022
-
+    - icon: linkedin
+      text: "LinkedIn"
+      href: "https://www.linkedin.com/in/chelseaarianto/"
+    - icon: envelope
+      text: "Email"
+      href: "mailto:chelseaarianto@gmail.com"
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+Hi, I’m Chelsea 👋  
+
+I’m currently completing a Master of Business at **Monash University**, focusing on **data analytics** and how it can be used to understand people better and make smarter decisions. My background in psychology means I naturally think about the *human side* of data, and I love turning numbers into stories that people can actually use.  
+
+I’m passionate about **clear communication, visualisation, and problem-solving**-- basically finding ways to make data less intimidating and more useful. Whether it’s through research, HR, or business strategy, I enjoy exploring how data and people come together.  
+
+When I’m not studying or working with data, you’ll usually find me learning new tools, diving into storytelling projects, or finding creative ways to connect ideas across fields.  

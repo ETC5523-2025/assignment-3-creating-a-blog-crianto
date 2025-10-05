@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, I’m Chelsea 👋\nI’m currently completing a Master of Business at Monash University, focusing on data analytics and how it can be used to understand people better and make smarter decisions. My background in psychology means I naturally think about the human side of data, and I love turning numbers into stories that people can actually use.\nI’m passionate about clear communication, visualisation, and problem-solving– basically finding ways to make data less intimidating and more useful. Whether it’s through research, HR, or business strategy, I enjoy exploring how data and people come together.\nWhen I’m not studying or working with data, you’ll usually find me learning new tools, diving into storytelling projects, or finding creative ways to connect ideas across fields."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Vaccines, Quarantine, and the Delta Variant: What We Learned",
+    "section": "",
+    "text": "When COVID-19 border quarantine systems were first set up, they worked pretty well at keeping outbreaks out of countries like Australia and New Zealand. But the arrival of the Delta variant changed the equation. Delta spread much faster, and vaccines weren’t as effective at stopping transmission. The big question was:\n👉 Could vaccination alone replace strict quarantine, or did we still need tough border rules?"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ETC5523 Blog Assessment",
+    "section": "",
+    "text": "Vaccines, Quarantine, and the Delta Variant: What We Learned\n\n\n\n\n\n\nCOVID-19\n\n\nQuarantine\n\n\n\n\n\n\n\n\n\nSep 26, 2025\n\n\nChelsea Rianto\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/welcome/index.html#why-this-matters",
+    "href": "posts/welcome/index.html#why-this-matters",
+    "title": "Vaccines, Quarantine, and the Delta Variant: What We Learned",
+    "section": "",
+    "text": "When COVID-19 border quarantine systems were first set up, they worked pretty well at keeping outbreaks out of countries like Australia and New Zealand. But the arrival of the Delta variant changed the equation. Delta spread much faster, and vaccines weren’t as effective at stopping transmission. The big question was:\n👉 Could vaccination alone replace strict quarantine, or did we still need tough border rules?"
+  },
+  {
+    "objectID": "posts/welcome/index.html#what-data-and-models-were-used",
+    "href": "posts/welcome/index.html#what-data-and-models-were-used",
+    "title": "Vaccines, Quarantine, and the Delta Variant: What We Learned",
+    "section": "What data and models were used",
+    "text": "What data and models were used\nThe study I reviewed (Zachreson et al., 2022) combined:\n\nQuarantine facility models tracking travelers, workers, testing, and possible “breach events” (when infection escaped quarantine).\n\nCommunity outbreak models that simulated how breaches could spread under different conditions — vaccine effectiveness, coverage rates, and viral transmissibility.\n\nThe researchers used real-world data on infection rates in travelers, incubation periods, test sensitivity, and Delta’s transmissibility."
+  },
+  {
+    "objectID": "posts/welcome/index.html#key-findings",
+    "href": "posts/welcome/index.html#key-findings",
+    "title": "Vaccines, Quarantine, and the Delta Variant: What We Learned",
+    "section": "Key findings",
+    "text": "Key findings\n\nFigure: Vaccines vs transmissibility\nHere’s a simplified version of one of the study’s results:\n\n\n\n\n\n\n\n\nFigure 1: Outbreak risk depends on both vaccine efficacy and transmissibility. Higher transmissibility (R0) requires more effective vaccines to keep risks under control.\n\n\n\n\n\nWe can see that for mild strains (R₀ ≈ 3), vaccines weren’t strictly necessary.\nBut for Delta (R₀ ≈ 6), vaccines needed to be at least 60% effective to keep outbreak risks at baseline.\nFor even more transmissible strains (R₀ ≈ 8), they had to be above 70%."
+  },
+  {
+    "objectID": "posts/welcome/index.html#what-data-models-were-used",
+    "href": "posts/welcome/index.html#what-data-models-were-used",
+    "title": "Vaccines, Quarantine, and the Delta Variant: What We Learned",
+    "section": "What Data & Models Were Used",
+    "text": "What Data & Models Were Used\nThe study I reviewed (Zachreson et al., 2022) combined:\n\nQuarantine facility models tracking travelers, workers, testing, and possible “breach events” (when infection escaped quarantine).\n\nCommunity outbreak models that simulated how breaches could spread under different conditions– vaccine effectiveness, coverage rates, and viral transmissibility.\n\nThe researchers used real-world data on infection rates in travelers, incubation periods, test sensitivity, and Delta’s transmissibility."
+  },
+  {
+    "objectID": "posts/welcome/index.html#community-vaccination-matters",
+    "href": "posts/welcome/index.html#community-vaccination-matters",
+    "title": "Vaccines, Quarantine, and the Delta Variant: What We Learned",
+    "section": "Community vaccination matters",
+    "text": "Community vaccination matters\nThe study shows that population vaccination rates change outcomes meaningfully. See Table 1.\n\n\n\n\nTable 1: Impact of Vaccination Coverage on Time to Outbreak\n\n\n\n\n\n\n\n\n\nCoverage\nTime to Outbreak\n\n\n\n\n60%\nShort (weeks)\n\n\n70%\nModerate\n\n\n80%\nMore than doubled\n\n\n90%\nMuch longer\n\n\n\n\n\n\n\n\n\n\nWhen coverage reached 80% or higher, the time until an outbreak more than doubled. If coverage was lower (below 60%), outbreaks tended to occur quickly no matter what. See Table 1."
+  },
+  {
+    "objectID": "posts/welcome/index.html#vaccines-vs-transmissibility",
+    "href": "posts/welcome/index.html#vaccines-vs-transmissibility",
+    "title": "Vaccines, Quarantine, and the Delta Variant: What We Learned",
+    "section": "Vaccines vs transmissibility",
+    "text": "Vaccines vs transmissibility\nHigher transmissibility means we need more effective vaccines to keep risk steady — see Figure 1. For mild strains (R₀ ≈ 3), vaccines weren’t strictly necessary, for Delta (R₀ ≈ 6) the threshold is around 60%, and for R₀ ≈ 8 it’s 70%+."
+  },
+  {
+    "objectID": "posts/welcome/index.html#conclusion",
+    "href": "posts/welcome/index.html#conclusion",
+    "title": "Vaccines, Quarantine, and the Delta Variant: What We Learned",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe results are clear:\n🟢 Vaccination helps a lot, but quarantine remains necessary for highly transmissible variants.\nEven if all travelers and staff were vaccinated, breaches still occurred. Without strong quarantine, outbreaks followed quickly — and if the community wasn’t highly vaccinated, spread was much faster. Instead of treating vaccines vs. quarantine as a trade-off, policymakers should treat them as complementary strategies: vaccines reduce infection risk, while quarantine reduces the chance of importation. These findings align with Zachreson et al. (2022), who concluded that vaccine coverage alone could not fully replace strict border quarantine during the Delta wave."
+  },
+  {
+    "objectID": "posts/welcome/index.html#references",
+    "href": "posts/welcome/index.html#references",
+    "title": "Vaccines, Quarantine, and the Delta Variant: What We Learned",
+    "section": "References",
+    "text": "References\nZachreson, C., Shearer, F. M., Price, D. J., Lydeamore, M. J., McVernon, J., McCaw, J., & Geard, N. (2022). COVID-19 in low-tolerance border quarantine systems: Impact of the Delta variant of SARS-CoV-2. Science advances, 8(14), eabm3624. https://doi.org/10.1126/sciadv.abm3624."
+  }
+]

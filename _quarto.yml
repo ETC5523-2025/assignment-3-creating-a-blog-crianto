@@ -2,12 +2,24 @@ project:
   type: website
 
 website:
-  title: "blog-template"
+  title: "Stories in Data"
+  description: "Sharing insights and stories hidden in data"
   navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - text: Blog
+        href: posts/index.qmd
     right:
-      - about.qmd
       - icon: github
-        href: https://github.com/etc5523-2022
+        href: https://github.com/ETC5523-2025/assignment-3-creating-a-blog-crianto
+        aria-label: GitHub
+  page-footer:
+    left: "© 2025 Chelsea Rianto"
+    right: "Built with [Quarto](https://quarto.org)"
 format:
   html:
     theme: cosmo

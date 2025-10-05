@@ -1,12 +1,105 @@
 ---
-title: "Welcome To My Blog Template"
-author: "Emi Tanaka"
-date: "2022-07-18"
-categories: [news]
+title: "Vaccines, Quarantine, and the Delta Variant: What We Learned"
+author: "Chelsea Rianto"
+date: "2025-09-26"
+categories: [COVID-19, Quarantine]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+## Why This Matters
 
-![](thumbnail.jpg)
+When COVID-19 border quarantine systems were first set up, they worked pretty well at keeping outbreaks out of countries like Australia and New Zealand. But the arrival of the **Delta variant** changed the equation. Delta spread much faster, and vaccines weren’t as effective at stopping transmission. The big question was:  
+👉 *Could vaccination alone replace strict quarantine, or did we still need tough border rules?*
 
 
+## What Data & Models Were Used
+
+The study I reviewed (Zachreson et al., 2022) combined:  
+
+- **Quarantine facility models** tracking travelers, workers, testing, and possible “breach events” (when infection escaped quarantine).  
+- **Community outbreak models** that simulated how breaches could spread under different conditions-- vaccine effectiveness, coverage rates, and viral transmissibility.  
+
+The researchers used real-world data on infection rates in travelers, incubation periods, test sensitivity, and Delta’s transmissibility. 
+
+
+## Key findings
+
+### Figure: Vaccines vs transmissibility  
+Here’s a simplified version of one of the study’s results:
+
+```{r}
+#| label: fig-outbreak-risk
+#| fig-cap: "Outbreak risk depends on both vaccine efficacy and transmissibility. Higher transmissibility (R0) requires more effective vaccines to keep risks under control."
+#| echo: false
+#| warning: false
+#| message: false
+
+library(ggplot2)
+
+df <- expand.grid(R0 = c(3,6,8),
+                  VE = seq(0,100,10))
+
+df$risk <- with(df, ifelse(R0==3, 100-VE,
+                     ifelse(R0==6, 200-VE*2,
+                            300-VE*2.5)))
+ggplot(df, aes(VE, risk, color=factor(R0))) +
+  geom_line(size=1.2) +
+  scale_color_manual(
+    values = c("#9ecae1", "#4292c6", "#08519c")  
+  ) +
+  labs(x="Vaccine Efficacy (%)",
+       y="Relative Outbreak Risk",
+       color = "R₀"
+       ) +
+  theme_minimal(base_size = 11) +
+  theme(
+    panel.background = element_rect(fill = "#fdfdfd", color = NA), 
+    plot.background = element_rect(fill = "#fdfdfd", color = NA),
+    axis.title.x = element_text(face = "bold"),   
+    axis.title.y = element_text(face = "bold"),   
+    legend.title  = element_text(face = "bold")
+  )
+```
+We can see that for mild strains (*R₀ ≈ 3*), vaccines weren’t strictly necessary.  
+But for **Delta (*R₀ ≈ 6*)**, vaccines needed to be **at least 60% effective** to keep outbreak risks at baseline.  
+For even more transmissible strains (*R₀ ≈ 8*), they had to be **above 70%**.
+
+## Community vaccination matters
+
+The study shows that **population vaccination rates** change outcomes meaningfully.
+See @tbl-vax-coverage.
+
+```{r}
+#| label: tbl-vax-coverage
+#| tbl-cap: "Impact of Vaccination Coverage on Time to Outbreak"
+#| echo: false
+#| warning: false
+#| message: false
+
+library(dplyr)
+library(gt)
+
+tibble(
+  Coverage = factor(c("60%", "70%", "80%", "90%"),
+                    levels = c("60%", "70%", "80%", "90%")),
+  `Time to Outbreak` = c("Short (weeks)", "Moderate", "More than doubled", "Much longer")
+) %>%
+  gt() %>%
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels(everything())
+  )
+```
+When coverage reached **80% or higher**, the time until an outbreak *more than doubled*.
+If coverage was lower (below 60%), outbreaks tended to occur quickly no matter what. See @tbl-vax-coverage.
+
+## Conclusion
+The results are clear:
+
+**🟢 Vaccination helps a lot, but quarantine remains necessary for highly transmissible variants.**
+
+Even if all travelers and staff were vaccinated, breaches still occurred. Without strong quarantine, outbreaks followed quickly — and if the community wasn’t highly vaccinated, spread was much faster.
+Instead of treating *vaccines vs. quarantine* as a trade-off, policymakers should treat them as *complementary strategies*: vaccines reduce infection risk, while quarantine reduces the chance of importation.
+These findings align with Zachreson et al. (2022), who concluded that vaccine coverage alone could not fully replace strict border quarantine during the Delta wave.
+
+## References
+Zachreson, C., Shearer, F. M., Price, D. J., Lydeamore, M. J., McVernon, J., McCaw, J., & Geard, N. (2022). COVID-19 in low-tolerance border quarantine systems: Impact of the Delta variant of SARS-CoV-2. Science advances, 8(14), eabm3624. [https://doi.org/10.1126/sciadv.abm3624](https://doi.org/10.1126/sciadv.abm3624).

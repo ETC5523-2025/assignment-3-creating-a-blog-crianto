@@ -1,0 +1,28 @@
+body {
+  background-color: #fdfdfd;
+  line-height: 1.6;
+}
+
+.navbar, footer {
+  background-color: #5f6f8a;
+}
+
+.navbar a, footer, footer a {
+  color: #e2e8f0 !important;
+}
+
+.quarto-title-block .quarto-title-banner {
+  background-color: #91a8d0 !important; /* pick your color */
+  color: #ffffff !important;            /* title text color */
+}
+
+.quarto-title-block .quarto-categories .quarto-category {
+  background-color: #91a8d0 !important;
+  color: #ffffff !important;
+  border-radius: 8px;
+}
+
+h1, h2, h3 {
+  color: #3f4a5c;
+  font-weight: 600;
+}
